@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'font1';
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+    font-family:'font2';
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+:root{
+	--cor1--: hsl(30, 54%, 90%);
+	--cor2--: hsl(30, 18%, 87%);
+    --cor3--: hsl(32, 54%, 32%);
+    --cor4--: hsl(14, 70%, 34%);
+    --cor5--: hsla(332, 55%, 80%, 0.26);
+}
+
+::-webkit-scrollbar{ 
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body{
+    background-color:var(--cor1--);
+    
+}
+
+header{
+    background-color: white;
+    border-radius: 10px;
+    width:70%;
+    height: 20%;
+    margin: auto;
+    padding: 40px;
+    font-family: 'font2';
+}
+header > img {
+    display: block;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+
+}
+
+header > h1,h2{
+    font-family: 'font1';
+    color: var(--cor4--);
+}
+
+header > ul.preparo{
+    background-color: var(--cor5--);
+    padding: 30px;
+    border-radius:8px;
+    width:100%vw;
+    height:150px;
+    
+}
+
+header > ul.preparo > li{
+    font-family: 'font2';
+    transform: translate(20px,-20px);
+    padding: 10px;
+}
+header > ul.preparo > h3 {
+    font-family: 'font2';
+    transform: translate(-10px,-30px);
+}
+
+
+header > ul.ingredientes > li{
+    font-family: 'font2';
+    padding-left: 10px;
+    
+}
+
+.nutrição{
+    font-family: 'font2';
+}
+
+ul.preparo ::marker{
+    color: var(--cor4--);
+}
+
+ul.ingredientes ::marker{
+    color: var(--cor4--);
+}
+
+
+article > li {
+    padding-left: 20px;
+}
+
+article > li::marker{
+    font-family: 'font2';
+    font-weight: bold;
+    color: var(--cor4--);
+
+}
+
+
+th.grama{
+    width: 100%;
+    color: var(--cor4--);
+}
+
+#t2 > th{
+    border-top: 1px solid rgba(221, 220, 220, 0.568);
+
+}
+#t3 > th{
+    border-top: 1px solid rgba(221, 220, 220, 0.568);
+
+}
+
+#t4 > th{
+    border-top: 1px solid rgba(221, 220, 220, 0.568);
+
+}
+
+.final {
+    font-family: 'font2';
+    font-size: small;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+}
